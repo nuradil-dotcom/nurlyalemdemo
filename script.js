@@ -35,7 +35,7 @@ burger.addEventListener("click", () => {
 });
 
 // Закрывать меню при клике на ссылку
-document.querySelectorAll("nav a]").forEach(link => {
+document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", () => {
         burger.classList.remove("active");
         nav.classList.remove("opening");
@@ -239,5 +239,6 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     let whatsappUrl = `https://wa.me/77761161988?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 });
+
 
 
