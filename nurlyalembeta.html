@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Nurly Alem - Рекламное Агентство</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo1.png"> <!-- Фавикон -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header id="header" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo" data-aos="zoom-in" data-aos-delay="100">
+            <!-- <img src="logo1.png" alt="Логотип компании"> -->
+            <a href="#hero">
+                <picture>
+                    <source srcset="logo2.png" media="(max-width: 768px)" >
+                    <img src="logo1.png" alt="Logo" class="logo" data-aos="fade-down" data-aos-duration="800">
+                </picture>
+            </a>
+
+
+        </div>
+
+        <nav id="nav" data-aos="fade-left" data-aos-delay="200">
+            <a href="#services" tabindex="-1">Услуги</a>
+            <a href="#portfolio" tabindex="-1">Портфолио</a>
+            <a href="#about" tabindex="-1">О нас</a>
+            <a href="#reviews" tabindex="-1">Отзывы</a>
+            <a href="#calculator" tabindex="-1">Калькулятор</a>
+            <a href="#contacts" tabindex="-1">Контакты</a>
+            <a href="https://wa.me/77000000000" class="btn-whatsapp mobile-only" tabindex="-1">WhatsApp</a>
+        </nav>
+
+        <div class="burger" id="burger" data-aos="fade-left" data-aos-delay="300">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <a href="https://wa.me/77000000000" class="btn-whatsapp desktop-only" data-aos="fade-left" data-aos-delay="400">WhatsApp</a>
+    </header>
+
+
+    <!-- Главный экран -->
+    <section id="hero" class="hero">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Ваша реклама — наше искусство</h1>
+            <p>Баннеры, лайтбоксы, стенды и многое другое — быстро, качественно, красиво.</p>
+            <a href="#contacts" class="btn-main" data-aos="zoom-in" data-aos-delay="200">Заказать сейчас</a>
+        </div>
+        <div class="hero-watermark" >
+            <img src="oyu.png" alt="Лого водяной знак">
+        </div>
+        <div class="hero-watermark-2" >
+            <img src="oyu2.png" alt="Лого водяной знак">
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <h2 data-aos="fade-up" data-aos-duration="800">Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="banner.jpg" alt="Баннеры">
+                <h3>Баннеры</h3>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="lightbox.webp" alt="Лайтбоксы">
+                <h3>Лайтбоксы</h3>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="stand.jpg" alt="Стенды" loading="lazy" >
+                <h3>Стенды</h3>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="composite.jpg" alt="Композит" loading="lazy">
+                <h3>Композит</h3>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="sh-tender.jpg" alt="Штендеры" loading="lazy">
+                <h3>Штендеры</h3>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+                <img src="window-ad.jpg" alt="Реклама на окнах" loading="lazy">
+                <h3>Реклама на окнах</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio">
+    <h2 data-aos="fade-up">Наши работы</h2>
+
+    <!-- Swiper container -->
+    <div class="swiper portfolioSwiper" data-aos="fade-up" data-aos-duration="900">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="work1.jpg" alt="Работа 1" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="work2.webp" alt="Работа 2" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="work3.webp" alt="Работа 3" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="work4.jpg" alt="Работа 4" loading="lazy"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="work5.jpg" alt="Работа 4" loading="lazy"/>
+        </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </section>
+    <!-- О нас -->
+    <section id="about" class="about">
+        <h2>Почему выбирают нас</h2>
+        <div class="about-features">
+            <div class="feature" data-aos="fade-right" data-aos-delay="200">
+                <h3>Скорость</h3>
+                <p>Делаем быстро и в срок.</p>
+            </div>
+            <div class="feature" data-aos="fade-right" data-aos-delay="300">
+                <h3>Качество</h3>
+                <p>Используем лучшие материалы.</p>
+            </div>
+            <div class="feature" data-aos="fade-right" data-aos-delay="400">
+                <h3>Доставка</h3>
+                <p>Привезём и установим.</p>
+            </div>
+            <div class="feature" data-aos="fade-right" data-aos-delay="500">
+                <h3>Индивидуальный дизайн</h3>
+                <p>Под каждого клиента.</p>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2 data-aos="fade-up">Отзывы наших клиентов</h2>
+        <div class="swiper reviewsSwiper" data-aos="fade-up" data-aos-duration="900">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="quote-mark">❝</div>
+                        <div class="review-avatar">
+                            <img src="ivan.jpg" alt="Клиент 1" loading="lazy">
+                        </div>
+                        <div class="review-bubble">
+                            <p><span class="quote-icon">❝</span> Рахмет за быструю работу и качественную услугу!. <span class="quote-icon">❞</span></p>
+                            <div class="review-author">
+                                <strong>Иван Иванов</strong>
+                                <span>CEO, Company</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="quote-mark">❝</div>
+                        <div class="review-avatar">
+                            <img src="aliya.jpg" alt="Клиент 2" loading="lazy">
+                        </div>
+                        <div class="review-bubble">
+                            <p><span class="quote-icon">❝</span> Превзошли все ожидания. Рекомендую! <span class="quote-icon">❞</span></p>
+                            <div class="review-author">
+                                <strong>Алия</strong>
+                                <span>Директор, Studio</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="quote-mark">❝</div>
+                        <div class="review-avatar">
+                            <img src="timur.jpg" alt="Клиент 3" loading="lazy">
+                        </div>
+                        <div class="review-bubble">
+                            <p><span class="quote-icon">❝</span> Красиво, стильно и в срок. Спасибо! <span class="quote-icon">❞</span></p>
+                            <div class="review-author">
+                                <strong>Тимур</strong>
+                                <span>Менеджер, Agency</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+    <section id="calculator">
+        <h2 data-aos="fade-up">Калькулятор стоимости</h2>
+        <form id="priceCalc" data-aos="zoom-in" data-aos-duration="900">
+            <div class="custom-select-calc">
+                <div class="select-trigger">Выберите услугу 🡳</div>
+                <div class="select-options">
+                    <div data-service="banner">Баннер</div>
+                    <div data-service="lightbox">Лайтбокс</div>
+                    <div data-service="stand">Стенд</div>
+                </div>
+            </div>
+            <input type="hidden" id="service" value="">
+            <label>Ширина (м):</label>
+            <input type="number" id="width" step="0.1" min="0.5" placeholder="Например: 2" required>
+
+            <label>Высота (м):</label>
+            <input type="number" id="height" step="0.1" min="0.5" placeholder="Например: 3" required>
+
+            <p>Примерная стоимость: <span id="totalPrice">0</span> ₸</p>
+        </form>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <h2 data-aos="fade-up">Свяжитесь с нами</h2>
+        <form id="orderForm" data-aos="fade-right" data-aos-duration="800">
+            <input type="text" placeholder="Ваше имя" required>
+
+            <input type="tel" id="phone" name="phone" placeholder="+7 777 123 45 67" required>
+
+            <!-- Кастомный селект -->
+            <div class="custom-select-contact">
+                <div class="select-selected">Выберите услугу 🡳</div>
+                <div class="select-items select-hide">
+                    <div>Доставка</div>
+                    <div>Консультация</div>
+                    <div>Индивидуальный заказ</div>
+                </div>
+            </div>
+
+
+            <textarea placeholder="Ваш заказ"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+
+
+        <div class="map" data-aos="zoom-in" data-aos-delay="200">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d599.5319696328655!2d68.32662141829465!3d40.774087068974005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1754799893951!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-logo" data-aos="fade-up">
+            <img src="logo1.png" alt="Логотип">
+        </div>
+    </section>
+
+    <footer>
+        <p>© Nurly Alem. Все права защищены.</p>
+        <p>Мекен-жай: Орталық алаң. Nurly Alem ғимараты</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/bal_bala_jetisay/" target="_blank" class="icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="tel:+77758510027" class="icon phone" aria-label="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
+
