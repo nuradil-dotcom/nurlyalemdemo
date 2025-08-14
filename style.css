@@ -8,6 +8,30 @@
 :root {
     --header-height: 80px;
 }
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #ff6600);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb, #ff4500);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f4f4f4;
+}
 
 html, body {
     overflow-x: hidden;
@@ -1058,5 +1082,6 @@ section h2 {
         backdrop-filter: blur(40px);
     }
 }
+
 
 
