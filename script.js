@@ -1,5 +1,16 @@
-// ===== Отправка формы в WhatsApp =====
 
+const lenis = new Lenis({
+    duration: 1.2, // Smoothness speed
+    easing: t => 1 - Math.pow(1 - t, 4), // Ease-out feel
+    smoothWheel: true,
+    smoothTouch: false // Keep touch scrolling natural on mobile
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 
 // ===== Плавное появление блоков при скролле =====
 const fadeElems = document.querySelectorAll(".services, .portfolio, .about, .contacts, .reviews, .calculator");
@@ -239,6 +250,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     let whatsappUrl = `https://wa.me/77761161988?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 });
+
 
 
 
