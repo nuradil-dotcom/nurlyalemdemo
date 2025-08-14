@@ -12,6 +12,9 @@
 html, body {
     overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* body {
     font-family: 'Roboto', sans-serif;
@@ -1055,4 +1058,5 @@ section h2 {
         backdrop-filter: blur(40px);
     }
 }
+
 
