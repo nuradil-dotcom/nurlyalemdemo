@@ -318,13 +318,12 @@ nav a:hover {
     padding: 50px 5%;
     
     max-width: 100%;
-    min-height: 100vh;;
+    min-height: 100vh;
     background-image: url('background_building.jpg');
   
     background-position: center;
 
     background-size: cover;
-    padding: 50px 5%;
 }
 
 .form-row {
@@ -346,6 +345,9 @@ nav a:hover {
     max-width: 300px;
 }
 
+.select-selected {
+    margin-bottom: -10px;
+}
 .orderForm {
     display: flex;
     flex-direction: column;
@@ -425,6 +427,16 @@ form button:hover {
         font-weight: 700;
         line-height: 1.1;
     }
+    .select-selected {
+        margin-bottom: -13px;
+    }
+    .orderForm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 420px;
+        
+    }    
 }
 
 /* === АДАПТАЦИЯ ПОД ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 480px) === */
@@ -446,6 +458,16 @@ form button:hover {
     .orderForm {
         margin-left: 0px;
     }
+    .select-selected {
+        margin-bottom: -15px;
+    }
+    .orderForm {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 420px;
+        
+    }    
 }
 
 .map iframe {
@@ -1345,6 +1367,7 @@ section h2 {
     }
 
 }
+
 
 
 
