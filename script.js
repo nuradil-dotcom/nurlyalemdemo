@@ -13,6 +13,10 @@ const lenis = new Lenis({
   requestAnimationFrame(raf);
 
 // ===== Плавное появление блоков при скролле =====
+// ===== Отправка формы в WhatsApp =====
+
+
+// ===== Плавное появление блоков при скролле =====
 const fadeElems = document.querySelectorAll(".services, .portfolio, .about, .contacts, .reviews, .calculator");
 
 function fadeInOnScroll() {
@@ -250,6 +254,9 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     let whatsappUrl = `https://wa.me/77761161988?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 });
+
+
+
 
 
 
