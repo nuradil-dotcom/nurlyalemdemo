@@ -8,7 +8,6 @@
 :root {
     --header-height: 80px;
 }
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -33,11 +32,13 @@
   scrollbar-color: #3b82f6 #f4f4f4;
 }
 
-html, body {
-    overflow-x: hidden;
-}
+
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /* body {
@@ -166,9 +167,9 @@ nav a:hover {
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 15px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -217,7 +218,7 @@ nav a:hover {
     text-align: center;
     margin-bottom: 40px;
     color: #142B6B;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -257,7 +258,7 @@ nav a:hover {
     text-align: center;
     margin-bottom: 30px;
     color: #142B6B;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -284,7 +285,7 @@ nav a:hover {
     text-align: center;
     margin-bottom: 30px;
     color: #142B6B;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 2.5rem;    
 }
@@ -312,34 +313,57 @@ nav a:hover {
 }
 
 /* CONTACTS */
+/* === БАЗОВАЯ СТРУКТУРА === */
 .contacts {
     padding: 50px 5%;
     border-radius: 20px;
+    max-width: 100%;
+    height: 100vh;;
+    background-image: url('background_building.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 5%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* расстояние между формой и заголовком */
+    flex-wrap: wrap;
     
 }
+
 .contacts h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    margin: 0;
     color: #142B6B;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    text-align: left;
+    max-width: 300px;
 }
-form {
+
+.orderForm {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-    
+    width: 420px;
+    margin-left: -90px;
 }
-form input, form textarea, form button {
+
+form input, 
+form textarea, 
+form button {
     padding: 10px;
     border: 1px solid #142B6B;
     border-radius: 10px;
     font-size: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 form button {
     background: var(--orange);
     color: var(--white);
@@ -349,9 +373,81 @@ form button {
     transition: background 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 form button:hover {
     background: var(--light-blue);
 }
+
+/* === АДАПТАЦИЯ ПОД ПЛАНШЕТЫ (до 1024px) === */
+@media (max-width: 1024px) {
+    .form-row {
+        flex-direction: column;
+        gap: 30px; /* уменьшили отступ */
+        
+    }
+    .orderForm {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+    .contacts h2 {
+        order: -1;
+        font-size: 3.5rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+}
+
+/* === АДАПТАЦИЯ ПОД СМАРТФОНЫ (до 768px) === */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px; /* уменьшили отступ */
+        
+    }
+
+    .contacts h2 {
+        order: -1;
+        font-size: 3rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .orderForm{
+        width: 80%;
+        max-width: 80%;
+        margin-left: 0px;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-family: "Montserrat", serif;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+}
+
+/* === АДАПТАЦИЯ ПОД ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 480px) === */
+@media (max-width: 480px) {
+    .contacts {
+        padding: 30px 4%;
+    }
+
+    .contacts h2 {
+        font-size: 2.3rem;
+    }
+
+    .orderForm input, 
+    .orderForm textarea, 
+    .orderForm button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .orderForm {
+        margin-left: 0px;
+    }
+}
+
 .map iframe {
     width: 100%;
     height: 300px;
@@ -359,15 +455,25 @@ form button:hover {
     border: none;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 800px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    display: none;
+
 }
 .footer-logo {
     text-align: center;
-    margin-top: 20px;
+    
     
 }
 .footer-logo img {
     height: 65px;
     width: auto;
+    filter: brightness(0) invert(1); /* делает картинку белой, если она PNG/SVG */
+    transition: filter 0.3s ease;
+    margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -596,7 +702,7 @@ section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #142B6B;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 1.1;
@@ -607,6 +713,8 @@ section h2 {
     width: 100%;
     padding-bottom: 40px;
     overflow: visible !important;
+    align-items: center;
+    align-content: center;;
 }
 
 .review-card {
@@ -714,31 +822,182 @@ section h2 {
 
 
 /* --- Калькулятор --- */
+#calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    background-image: url('background_black.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 5%;
+    min-height: 100vh;
+    color: var(--white);
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+#calculator .select-trigger {
+    color: black;
+}
+.calculator-left {
+    max-width: 400px;
+    flex: 1 1 350px;
+}
+
+#calculator h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 0 0 15px 0; /* сдвиг заголовка левее */
+    line-height: 1.1;
+    color: var(--white);
+
+}
+
+.calc-description {
+  font-family: "Montserrat", serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.calc-description h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+
+}
+
+.calc-description ul {
+  list-style-type: disc; /* можно заменить на circle или убрать */
+  padding-left: 20px;
+}
+
+.calc-description li {
+  margin-bottom: 5px;
+  color:#888;
+}
+
+
+.calculator-right {
+    max-width: 350px;
+    flex: 1 1 320px;
+}
+
 #calculator form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
 #calculator label {
-    font-weight: bold;
-    color: var(--blue);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--white);
 }
 
-#calculator input, #calculator select {
+#calculator input,
+#calculator select {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     font-size: 1rem;
     border: 1px solid #142B6B;
-    border-radius: 10px;
+    border-radius: 8px;
+    background-color: #fff;
 }
+
+/* Адаптив */
+/* === АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (до 1024px) === */
+@media (max-width: 1024px) {
+    #calculator {
+        gap:80px;
+        padding: 190px 5%;
+    }
+
+    #calculator h2 {
+        font-size: 3.5rem;
+    }
+
+    .calc-description h3 {
+        font-size: 1.6rem;
+    }
+    #calculator form {
+        width: 400px;
+        margin: 0 auto;         /* центрирует блок */
+        max-width: 500px;       /* как у нижней формы */
+    
+    }
+}
+
+/* === АДАПТАЦИЯ ДЛЯ СМАРТФОНОВ (до 768px) === */
+@media (max-width: 768px) {
+    #calculator {
+        
+        /* text-align: center; */
+        gap: 20px;
+        padding: 200px      5%;
+    }
+
+    #calculator h2 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .calc-description {
+        font-size: 0.95rem;
+    }
+
+    #calculator form {
+        width: 400px;
+        margin: 0 auto;         /* центрирует блок */
+        max-width: 500px;       /* как у нижней формы */
+ 
+        margin-left: -25px; 
+    }
+}
+
+/* === АДАПТАЦИЯ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 480px) === */
+@media (max-width: 480px) {
+    #calculator {
+        padding: 200px 4%;
+        gap: 10px;
+    }
+
+    #calculator h2 {
+        font-size: 2.3rem;
+    }
+
+    .calc-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .calc-description ul {
+        padding-left: 15px;
+    }
+
+    #calculator input,
+    #calculator select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #calculator label {
+        font-size: 0.9rem;
+    }
+
+    .select-trigger {
+        font-size: 0.9rem;
+    }
+    #calculator form {
+        max-width: 98%;
+        margin-left: 0;
+    }
+}
+
+
+
+
 
 #calculator button {
     padding: 12px;
@@ -805,9 +1064,7 @@ section h2 {
         padding: 15px;
     }
 
-    #calculator form {
-        padding: 15px;
-    }
+
     #header nav a {
         color: #142B6B;
         
@@ -1062,8 +1319,8 @@ section h2 {
 
 /* Липкий */
 #header.is-sticky {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(5px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   border-radius: 30px;
   top:8px;
@@ -1082,6 +1339,9 @@ section h2 {
         backdrop-filter: blur(40px);
     }
 }
+@media (max-width: 480px) {
+    #header .logo img {
+        max-height: 35px;
+    }
 
-
-
+}
