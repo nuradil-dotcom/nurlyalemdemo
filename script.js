@@ -181,10 +181,11 @@ const portfolioSwiper = new Swiper(".portfolioSwiper", {
 // ===== Добавим анимацию через CSS класс =====
 
 AOS.init({
-            once: true, // Анимация только один раз
-            offset: 100 // Смещение срабатывания
-        });
-
+    offset: 100,   // на каком отступе срабатывать
+    duration: 800, // (по желанию) скорость анимации в мс
+    once: false,   // чтобы повторялась, а не один раз
+    mirror: true   // чтобы уходило при скролле вверх
+});
 // Поля формы заказа
 const nameInput = document.querySelector('#orderForm input[type="text"]');
 const phoneInput = document.getElementById('phone');
@@ -254,6 +255,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     let whatsappUrl = `https://wa.me/77761161988?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 });
+
 
 
 
