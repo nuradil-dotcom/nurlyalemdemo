@@ -68,7 +68,7 @@ h1, h2, h3, nav a, .btn {
 
 body {
     background: var(--white);
-    color: white;
+    color: #222;
     line-height: 1.5;
     background-image: url('background_new.jpg');
     background-repeat: no-repeat;
@@ -1394,6 +1394,7 @@ section h2 {
     }
 
 }
+
 
 
 
