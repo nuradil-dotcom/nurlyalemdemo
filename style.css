@@ -71,6 +71,10 @@ body {
     color: white;
     line-height: 1.5;
     background-image: url('background_new.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* HEADER */
@@ -1387,6 +1391,7 @@ section h2 {
     }
 
 }
+
 
 
 
