@@ -68,9 +68,9 @@ h1, h2, h3, nav a, .btn {
 
 body {
     background: var(--white);
-    color: #222;
+    color: white;
     line-height: 1.5;
-    background-image: url('background.png');
+    background-image: url('background_new.png');
 }
 
 /* HEADER */
@@ -1387,5 +1387,6 @@ section h2 {
     }
 
 }
+
 
 
