@@ -868,7 +868,9 @@ section h2 {
     align-items: center;
     justify-content: center;
     gap: 180px;
-    background-image: url('background_black.jpg');
+    background-image: url('background_black_new.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     padding: 60px 5%;
@@ -1391,6 +1393,7 @@ section h2 {
     }
 
 }
+
 
 
 
