@@ -254,7 +254,7 @@ nav a:hover {
 .service-card h3 {
     padding: 15px;
     text-align: center;
-    color: var(--orange);
+    color: var(--white);
 }
 
 /* PORTFOLIO */
@@ -1393,6 +1393,7 @@ section h2 {
     }
 
 }
+
 
 
 
