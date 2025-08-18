@@ -288,6 +288,7 @@ nav a:hover {
 /* ABOUT */
 .about {
     padding: 50px 5%;
+    text-color:black;
 }
 .about h2 {
     text-align: center;
@@ -1393,6 +1394,7 @@ section h2 {
     }
 
 }
+
 
 
 
