@@ -236,13 +236,12 @@ nav a:hover {
     gap: 20px;
 }
 .service-card {
-    background: var(--white);
+    background: rgb(0,0,255);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: transform 0.3s ease;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    
 }
 .service-card:hover {
     transform: translateY(-5px);
@@ -1394,6 +1393,7 @@ section h2 {
     }
 
 }
+
 
 
 
