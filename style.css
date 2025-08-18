@@ -322,7 +322,7 @@ nav a:hover {
     padding: 50px 5%;
     
     max-width: 100%;
-    min-height: 100vh;
+    height: 100dvh;
     background-image: url('background_building.jpg');
     
     background-position: center;
@@ -1387,4 +1387,5 @@ section h2 {
     }
 
 }
+
 
