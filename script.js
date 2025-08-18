@@ -252,9 +252,10 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 Хочу заказать: ${order}. 
 Услуга: ${selectedServiceOrder || 'Не выбрано'}`;
 
-    let whatsappUrl = `https://wa.me/77761161988?text=${encodeURIComponent(message)}`;
+    let whatsappUrl = `https://wa.me/77011073664?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 });
+
 
 
 
