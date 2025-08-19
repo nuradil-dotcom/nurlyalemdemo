@@ -75,7 +75,9 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    background-attachment: scroll; /* disable buggy fixed */
+    background: url("background_new_mobile.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll; /* avoids mobile bugs */
   }
 }
 /* HEADER */
@@ -880,6 +882,13 @@ section h2 {
     max-width: 100%;
     flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  #calculator {
+    background: url("background_black_new_mobile.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll; /* avoids mobile bugs */
+  }
+}
 #calculator .select-trigger {
     color: black;
 }
@@ -1394,6 +1403,7 @@ section h2 {
     }
 
 }
+
 
 
 
