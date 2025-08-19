@@ -67,16 +67,17 @@ h1, h2, h3, nav a, .btn {
 }
 
 body {
-    background: var(--white);
     color: #222;
     line-height: 1.5;
-    background-image: url('background_new.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: var(--white) url('background_new.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
-
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* disable buggy fixed */
+  }
+}
 /* HEADER */
 header {
     display: flex;
@@ -1393,6 +1394,7 @@ section h2 {
     }
 
 }
+
 
 
 
